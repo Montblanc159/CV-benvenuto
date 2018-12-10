@@ -6,12 +6,24 @@ a {
   text-decoration: none;
 }
 
+caption {
+  caption-side: bottom;
+}
+
 ul {
   list-style-type: none;
 }
 
 strong {
   font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
 }
 
 /* Import */
@@ -229,4 +241,22 @@ footer {
   position: absolute;
   bottom: 25px;
   right: 25px;
+}
+
+
+/* Responsive */
+
+@media all and (max-width: 1024px) {
+
+.sidebar {
+  display: none;
+}
+
+.main-content {
+  flex-direction: column;
+}
+
+footer {
+  position: fixed;
+}
 }

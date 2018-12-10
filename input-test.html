@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/master.css">
+    <title></title>
+  </head>
+  <body>
+
+<form class="" action="traitement.php" method="post">
+<fieldset>
+  <legend>Coordonnés :</legend>
+  <p>
+    <label for="email">Votre email</label> :
+    <input type="email" name="email" id="email" value="" placeholder="Votre email..." size="30" autofocus required>
+  </p>
+
+  <p>
+    <label for="telnum">Votre téléphone</label> :
+    <input type="tel" name="telnum" id="telnum" value="" placeholder="Votre n° de tél...">
+  </p>
+
+  <p>
+    <label for="site">Votre site</label> :
+    <input type="url" name="site" id="site" value="" placeholder="URL de votre site...">
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Infos persos :</legend>
+
+  <p>
+    <label for="pseudo">Votre pseudo</label> :
+    <input type="text" name="pseudo" id="pseudo" value="" placeholder="Votre pseudo..." size="30" maxlength="20" required>
+  </p>
+  <p>
+    <label for="password">Votre password</label> :
+    <input type="password" name="password" id="password" value="" placeholder="Votre mot de passe..." size="30" maxlength="30" required>
+  </p>
+
+  <p>
+    <label for="qui">Qui suis-je ?</label> <br>
+    <textarea name="qui" id="qui" rows="8" cols="80">Je pense donc je suis.</textarea>
+  </p>
+</fieldset>
+
+<fieldset>
+<legend>Autres :</legend>
+  <p>
+    <label for="chiffre">Votre chiffre</label> :
+    <input type="number" name="chiffre" id="chiffre" value="" placeholder="Votre chiffre" min="2" max="14" step="2">
+  </p>
+
+  <p>
+    <label for="curseur">La taille</label> :
+    <input type="range" name="curseur" id="curseur" value="" min="2" max="18" step="2">
+  </p>
+
+  <p>
+    <label for="couleur">La couleur</label> :
+    <input type="color" name="couleur" id="couleur" value="">
+  </p>
+
+  <p>
+    <label for="born">Date de naissance</label> :
+    <input type="date" name="born" id="born" value="">
+  </p>
+
+  <p>
+    <label for="search">Recherche</label> :
+    <input type="search" name="search" id="search" value="">
+  </p>
+</fieldset>
+
+
+<fieldset>
+<legend>Encore plus d'infos :</legend>
+  <p>
+    Quels sont vos préférences ? <br>
+    <input type="checkbox" name="1" id="1" checked> <label for="1">1</label>
+    <input type="checkbox" name="2" id="2"> <label for="2">2</label>
+    <input type="checkbox" name="3" id="3"> <label for="3">3</label>
+    <input type="checkbox" name="4" id="4"> <label for="4">4</label>
+  </p>
+
+  <p>
+    Choisissez une couleur : <br>
+    <input type="radio" name="couleur" id="bleu" value="bleu" checked> <label for="bleu">Bleu</label>
+    <input type="radio" name="couleur" id="blanc" value="blanc"> <label for="blanc">Blanc</label>
+    <input type="radio" name="couleur" id="rouge" value="rouge"><label for="rouge">Rouge</label>
+  </p>
+
+  <p>
+    A quel groupe appartenez-vous ?
+    <select class="" name="group" id="group">
+      <optgroup label="Chien">
+        <option value="ba">Berger allemand</option>
+        <option value="bb">Berger belge</option>
+        <option value="chi">Chihuahua</option>
+      </optgroup>
+      <optgroup label="Loup">
+        <option value="loupblanc" selected>Loup blanc</option>
+        <option value="loupgris">Loup gris</option>
+        <option value="loupnoir">Loup noir</option>
+      </optgroup>
+    </select>
+  </p>
+
+</fieldset>
+
+<input type="submit" name="" value="Envoyer">
+</form>
+
+  </body>
+</html>
